@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header{
+    width: 100%;
+    background-color: rgb(62,62,161);
+    padding: 0.8rem;
+    color: white;
+}
+header h3{
+    margin: 12px auto;
+    text-align: center;
+}
+.container{
+    padding: 1rem;
+    margin: 1rem;
+}
+video{
+    max-width: 100%;
+    max-height: 400px;
+}
+p{
+    padding: 1rem;
+    font-size: 18px;
+}
+button{
+    margin: 1rem auto;
+    padding: 8px 2rem;
+    box-sizing: border-box;
+    background-color: rgb(62, 62, 161);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    min-width: 80px;
+    cursor: pointer;
+    opacity: 1.0;
+}
+button:hover{
+    opacity: 0.8;
+}
+
+.loader{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+/* Spinner */
+.spinner-2:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 60px;
+  width: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: rgb(62, 62, 161);
+  border-bottom-color: rgb(62, 62, 161);
+  animation: spinner 0.7s ease infinite;
+}
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width:600px){
+    .container{
+        margin: 22px;
+        padding: 8px;
+    }
+    video{
+        max-height: 300px;
+    }
+}
+#results{
+    margin: 0;
+}
+#data, #prob{
+    color: rgb(62, 62, 161);
+}

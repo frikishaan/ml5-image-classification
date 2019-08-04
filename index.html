@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.3.1/dist/ml5.min.js"></script>
+    <title>Image classifier using ml5.js</title>
+</head>
+
+<body>
+    <header>
+        <h3>Object Detection</h3>
+    </header>
+
+    <div class="loader">
+        <div class="loading">
+            <div class="spinner-2">
+            </div>
+            <p style="text-align:center">
+                Loading Assets...
+                <br>
+                Please allow camera access to this app.
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <video id="video" width="640" height="480" autoplay></video>
+        <!-- <button id="predict">Start Predictions</button> -->
+        <p id="results">
+            <p><b>Data : </b> <span id="data"></span> </p>
+            <p><b>Confidence : </b> <span id="prob"></span>%</p>
+        </p>
+
+    </div>
+    <script src="assets/sketch.js"></script>
+</body>
+
+</html>
+
+<!-- <img id="image" crossOrigin src="https://images.unsplash.com/photo-1519817914152-22d216bb9170?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            width=227 height=227 /> -->
