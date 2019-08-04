@@ -94,3 +94,8 @@ button:hover{
 #data, #prob{
     color: rgb(62, 62, 161);
 }
+.note{
+    font-size: 12px;
+    color: grey;
+    text-align: center;
+}
